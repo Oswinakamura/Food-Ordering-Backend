@@ -39,9 +39,9 @@ describe('AuthRepository', () => {
   it('should return user id when added to db', async () => {
     //arrange
     const user = {
-      name: 'John Flyn',
-      email: 'Flyn@mail.com',
-      password: 'pass232',
+      name: 'Oswaldo',
+      email: 'Oswaldo@mail.com',
+      password: 'pass0512',
       type: 'email',
     }
 
@@ -49,8 +49,8 @@ describe('AuthRepository', () => {
     const result = await sut.add(
       user.name,
       user.email,
-      user.password,
-      user.type
+      user.type,
+      user.password
     )
     //assert
     expect(result).to.not.be.empty

@@ -4,15 +4,20 @@
     "description": "food app backend",
     "main": "index.js",
     "scripts": {
+        "dev": "ts-node ./src/app.ts",
         "test": "mocha --require ts-node/register --watch-extensions ts 'test/**/*.spec.ts' --timeout 5000"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@types/bcrypt": "^3.0.0",
         "@types/chai": "^4.2.11",
         "@types/chai-as-promised": "^7.1.3",
+        "@types/express": "^4.17.7",
+        "@types/jsonwebtoken": "^8.5.0",
         "@types/mocha": "^8.0.0",
         "@types/mongoose": "^5.7.32",
+        "@types/supertest": "^2.0.10",
         "chai": "^4.2.0",
         "chai-as-promised": "^7.1.1",
         "mocha": "^8.0.1",
@@ -20,7 +25,13 @@
         "typescript": "^3.9.7"
     },
     "dependencies": {
+        "bcrypt": "^5.0.0",
         "dotenv": "^8.2.0",
-        "mongoose": "^5.9.25"
+        "express": "^4.17.1",
+        "express-validator": "^6.6.0",
+        "express-validators": "^1.0.4",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.9.25",
+        "supertest": "^4.0.2"
     }
 }
